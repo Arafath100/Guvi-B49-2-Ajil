@@ -1,0 +1,26 @@
+1.Difference between HTTP1.1 vs HTTP2:
+
+    HTTP stands for Hyper Text Transfer     Protocol.It is used for client(request) to server(response).
+                                  |            |
+                          data/information   Set of 
+                              passing         rules
+ 
+    * HTTP1.1 can only reuse (Use the  limited information at the same time) but HTTP2 can use to concurrent(Use the many information at the same time).
+
+    * HTTP2 much faster and more efficient than HTTP1.1.
+
+
+
+2.Objects and its internal representation in Javascript:
+
+    * In Javascript, objects are the object ,with properties and type.
+
+    * For ex:A book is a object ,with properties and type.A book has a name,color,a material it is made of, etc...
+      A same way,javascript objects have a properties and type which define their characteristics.
+
+    * And objects also have a method.
+ 
+    * All JavaScript values are objects.Except javaScript primitives.In javascript a primitive value is a value.
+
+
+       
