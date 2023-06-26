@@ -1,0 +1,15 @@
+Difference between Document and Window: 
+    
+         * Document is the object of window property,  window is the object of browser.
+
+         * Document is loaded inside the window, window is the very first object that is loaded in the browser.
+
+         * Document is the part of BOM and DOM, window is only the part of BOM.
+
+         * Document syntax is document.propertyname, window syntax is window.propertyname.
+
+         * Document can access by using window.document, window can access by window from the window(window.window).
+
+         * Document object properties are title, body, cookies, etc.., window properties are screen, name, etc...
+
+         * Example for document is title of the document, example for window is screen area of the browser.
