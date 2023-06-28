@@ -1,0 +1,161 @@
+//To display all the country flags in the console:
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          var countriesDetail = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetail.length; i++) {
+            console.log(countriesDetail[i].flag);
+          }
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//To display all the countries name in the console:
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          var countriesDetail = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetail.length; i++) {
+            console.log(countriesDetail[i].name.common);
+          }
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+//To display all the countries regions in the console:
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          var countriesDetail = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetail.length; i++) {
+            console.log(countriesDetail[i].region);
+          }
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+//To display all the countries sub region in the console :
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          var countriesDetail = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetail.length; i++) {
+            console.log(countriesDetail[i].subregion);
+          }
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//To display all the countries population in the console:
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          console.log(xhr.responseText)
+          var countriesDetail = JSON.parse(xhr.responseText);
+          for (var i = 0; i < countriesDetail.length; i++) {
+            console.log(countriesDetail[i].population);
+          }
+        } else {
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
