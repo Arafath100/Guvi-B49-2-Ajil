@@ -40,4 +40,3 @@ var values = Object.values(a);
 Object.keys(a).forEach((key, index) => {
   console.log(key + ":" + values[index]);
 });
-
