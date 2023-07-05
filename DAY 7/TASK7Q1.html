@@ -1,0 +1,190 @@
+//A.Get all the countries from Asia continent /region using Filter function:
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText)
+        var countriesDetail = JSON.parse(xhr.responseText);
+
+        var asiaCountries = countriesDetail.filter(country => country.region === 'Asia');
+
+        asiaCountries.forEach(country => {
+          document.write(country.name.common + '<br>');
+        });
+      }
+    };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//B.Get all the countries with a population of less than 2 lakhs using the Filter function:
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText)
+        var countriesDetail = JSON.parse(xhr.responseText);
+
+        var asiaCountries = countriesDetail.filter(country => country.population < 200000);
+
+        asiaCountries.forEach(country => {
+          document.write(country.name.common + '<br>');
+        });
+      }
+    };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//C.Print the following details name, capital, flag using forEach function:
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText)
+        var countriesDetail = JSON.parse(xhr.responseText);
+
+        countriesDetail.forEach(country => {
+          let name = country.name.common;
+          let capital = country.capital[0];
+          let flag = country.flags.png;
+
+          document.write('<p><strong>Name:</strong> ' + name + '</p>');
+          document.write('<p><strong>Capital:</strong> ' + capital + '</p>');
+          document.write('<img src="' + flag + '" alt="Flag of ' + name + '">');
+          document.write('<hr>');
+        });
+      }
+    };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//D.Print the total population of countries using reduce function:
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      var xhr = new XMLHttpRequest();
+
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log(xhr.responseText)
+        var countriesDetail = JSON.parse(xhr.responseText);
+               
+
+        var totalPop = countriesDetail.reduce((accumulator, country) => {
+          const population = country.population;
+          return accumulator + population;
+        }, 0);
+
+        
+        document.write('<p>Total Population: ' + totalPop + '</p>');
+      }
+    };
+
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+//E.Print the country which uses US Dollars as currency:
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var details = JSON.parse(xhr.responseText);
+          for (var i = 0; i < details.length; i++) {
+            if (details[i].currencies != undefined) {
+              Object.keys(details[i].currencies).forEach((key) => {
+                if (key == "USD") {
+                  console.log(key, details[i].currencies[key]);
+                }
+              });
+            }
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
