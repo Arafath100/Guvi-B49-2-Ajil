@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <p class="myClass" id="myID"></p>
+    </div>
+    
+    
+    <script>
+        const newElement = document.createElement("p");
+        newElement.setAttribute("class","myClass");
+        newElement.setAttribute("id","myID");
+
+        newElement.innerText = "hi,hello,bye,bye";
+
+        const existingElement = document.getElementById("myDiv");
+        existingElement.append(newElement,"hii!!!!");
+
+        const existingElementAll = document.querySelectorAll(".myClass");
+        existingElementAll.forEach((element)=>{
+            element.style.color = "blue";
+        })
+
+        
+    </script>
+</body>
+</html>
