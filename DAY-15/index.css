@@ -1,0 +1,23 @@
+/* styles.css */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .pagination-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .pagination-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
