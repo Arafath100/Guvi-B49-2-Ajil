@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2><u>Form:</u></h2><br>
+    <br>
+    <form id="myForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+        <br>
+    
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+        <br>
+    
+        <label for="address">Address:ﾠﾠ</label>
+        <input type="text" id="address" required><br>
+        <br>
+    
+        <label for="pincode">Pincode:ﾠﾠ</label>
+        <input type="text" id="pincode" required pattern="[0-9]{6}" title="Please enter a valid 6-digit pincode"><br>
+        <br>
+    
+        <label for="gender">Gender:ﾠﾠ</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="Others">
+        <label for="others">Others</label><br>
+        <br>
+
+
+        <label for="food">Choice of Food(at least 2):</label>
+        <select  id="food" multiple required>
+            <option value="Biriyani">Biriyani</option>
+            <option value="Poratta">Poratta</option>
+            <option value="Chapati">Chapati</option>
+            <option value="Idli">Idli</option>
+            <option value="Dosa">Dosa</option>
+      </select><br>
+      <br>
+    
+       
+    
+        <label for="state">State:ﾠﾠﾠﾠﾠ</label>
+        <input type="text" id="state" required><br>
+        <br>
+
+    
+        <label for="country">Country:ﾠﾠ</label>
+        <input type="text" id="country" required><br>
+        <br>
+
+    
+        <input type="submit" value="Submit">
+      </form><br>
+    
+      <table id="dataTable">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

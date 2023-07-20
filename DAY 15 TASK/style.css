@@ -1,0 +1,27 @@
+body {
+    background-color: blue;
+    color: black;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  form {
+    width: 400px;
+    margin-bottom: 20px auto;
+    text-align: justify;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  th {
+    background-color: yellowgreen;
+  }
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
