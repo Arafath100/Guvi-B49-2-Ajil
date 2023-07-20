@@ -1,4 +1,3 @@
-/* styles.css */
 .pagination-container {
     display: flex;
     justify-content: center;
@@ -19,5 +18,11 @@
   .pagination-link.active {
     background-color: #007bff;
     color: #fff;
+  }
+  .Ajil {
+    font-size: xx-large;
+    background-color: blue;
+    text-align: center;
+    
   }
   
