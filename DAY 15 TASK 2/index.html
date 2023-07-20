@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculator</h2>
+        <input type="text" id="display" disabled style="width: 150px;">
+    
+        <input class="ButtonColor" type="button" value="1" onclick="appendToDisplay('1')">
+        <input class="ButtonColor" type="button" value="2" onclick="appendToDisplay('2')">
+        <input class="ButtonColor" type="button" value="3" onclick="appendToDisplay('3')">
+        <input class="ButtonColor" type="button" value="4" onclick="appendToDisplay('4')">
+        <input class="ButtonColor" type="button" value="5" onclick="appendToDisplay('5')">
+        <input class="ButtonColor" type="button" value="6" onclick="appendToDisplay('6')">
+        <input class="ButtonColor" type="button" value="7" onclick="appendToDisplay('7')">
+        <input class="ButtonColor" type="button" value="8" onclick="appendToDisplay('8')">
+        <input class="ButtonColor" type="button" value="9" onclick="appendToDisplay('9')">
+        <input class="ButtonColor" type="button" value="." onclick="appendToDisplay('.')">
+        <input class="ButtonColor" type="button" value="0" onclick="appendToDisplay('0')">
+        <input class="ButtonColor" type="button" value="=" onclick="calculate()" >
+        <input class="ButtonColor" type="button" value="+" onclick="appendToDisplay('+')">
+        <input class="ButtonColor" type="button" value="-" onclick="appendToDisplay('-')">
+        <input class="ButtonColor" type="button" value="*" onclick="appendToDisplay('*')">
+        <input class="ButtonColor" type="button" value="/" onclick="appendToDisplay('/')">
+        <input class="ButtonColor" type="button" value="%" onclick="appendToDisplay('%')">
+        <input class="ButtonColor" type="button" value="CLR" onclick="clearDisplay()">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

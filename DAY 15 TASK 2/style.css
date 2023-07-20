@@ -1,0 +1,21 @@
+body {
+    background-color: blue;
+    color: black;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  .calculator {
+    width: 200px;
+    margin: 0 auto;
+  }
+  input {
+    width: 50px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .ButtonColor {
+    background-color: black;
+    color: aliceblue;
+  }
