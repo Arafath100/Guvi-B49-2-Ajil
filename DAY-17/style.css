@@ -1,0 +1,8 @@
+body {
+    background-color: darkslategrey;
+    color: black;
+    font-family: fantasy;
+    font-size: xx-large;
+    border: 4px inset white;
+    text-align: center;
+}

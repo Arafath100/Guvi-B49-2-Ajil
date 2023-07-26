@@ -1,10 +1,9 @@
 div {
     text-align: center;
-    color: darkgreen;
-    background-color: orange;
-    padding: auto;
-    border: ;
+    color: white;
+    background-color: green;
+    padding: 200px;
     font-size: 20px;
-    font-family: fantasy;
-    
+    font-family: fantasy;  
 }
+
