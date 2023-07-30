@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #holiday-info {
+    margin-top: 20px;
+  }
+  
+  .holiday {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .holiday p {
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .holiday p:nth-child(odd) {
+    font-weight: bold;
+    background-color: #e5e5e5;
+  }
+  
+  #searchDiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #dateInput {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  #searchButton {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  #searchButton:active {
+    background-color: #0047a2;
+  }
+  
