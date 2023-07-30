@@ -8,7 +8,7 @@ function getKural(no) {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      return response.json(); // Parse the response as JSON
+      return response.json();
     })
     .then((data) => {
       // Extract the relevant data from the response
@@ -20,7 +20,7 @@ function getKural(no) {
       const tam_exp = data.tam_exp;
 
       const kuralInfo = document.querySelector('.kuralInfo');
-      kuralInfo.innerHTML = ''; // Clear the previous Kural information
+      kuralInfo.innerHTML = '';
 
       // Create a container box to hold the Kural information and style it
       const box = document.createElement('div');
@@ -75,23 +75,23 @@ function getKural(no) {
 
 // Function to handle form submission
 function handleSubmit(event) {
-  event.preventDefault(); // Prevent the default form submission behavior
+  event.preventDefault(); 
 
   let noInput = document.querySelector('.noInput');
-  let no = noInput.value.trim(); // Get the Kural number entered by the user and trim whitespace
+  let no = noInput.value.trim(); 
 
   // Check if the entered input is a valid number
   if (!isNaN(no) && no !== '') {
-    getKural(no); // Fetch and display the information for the provided Kural number
+    getKural(no); 
   } else {
     // Set the button color to red for invalid input
     let searchButton = document.querySelector('.searchButton');
     searchButton.style.backgroundColor = 'red';
 
-    // Reset the button color after 1 second
+    // Reset the button color after 2 second
     setTimeout(() => {
       searchButton.style.backgroundColor = 'green';
-    }, 1000);
+    }, 2000);
   }
 }
 
