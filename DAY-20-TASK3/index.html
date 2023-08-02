@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Football</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1><b>Football Match Details</b></h1>
+        <button id="btn-2">Get The Live Score</button> <br>
+      <button id="btn">Get Latest Match Highlights</button>
+    </div>
+    <div class="result" id="result1">
+        <h2>Latest Match Highlights</h2>
+        <div class="displayResults"></div>
+    </div>
+    <div class="result" id="result2">
+        <h2>Live Score Update</h2>
+        <div class="displayResults2">
+            <iframe src="https://www.scorebat.com/embed/livescore/?token=MTAwMzQ3XzE2OTA5NzY2OThfOTFjZDZjY2I4N2IwZjY4MTVhOWNhZjk4NGFmYzdmZDQyZDI0Y2FhYQ=="
+                frameborder="0" width="100%" height="100%" allowfullscreen allow="autoplay; fullscreen"
+                style="width: 100%; height: 760px; overflow: hidden; display: block" class="_scorebatEmbeddedPlayer_">
+            </iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
