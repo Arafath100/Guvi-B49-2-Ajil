@@ -26,7 +26,7 @@ function getKural(no) {
       const box = document.createElement('div');
       box.setAttribute(
         'class',
-        'container text-white mt-5 border border-5 text-center p-3 fs-3 gradient-background'
+        'container text-black mt-5 border border-5 text-center p-3 fs-3 gradient-background'
       );
 
       // Create the header section with chapter information
