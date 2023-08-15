@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MealDB API Example</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1>Search what variety of Meals you want</h1>
+    <h3>Meals DataBase</h3>
+    <div class="form-group">
+      <label for="searchCategory">Search Category:</label>
+      <select class="form-control" id="searchCategory">
+        <option value="name">By Name</option>
+        <option value="letter">By First Letter</option>
+        <option value="id">By ID</option>
+        <option value="random">Random Meal</option>
+      </select>
+    </div>
+    <div class="form-group" id="searchInput">
+      <label for="searchQuery">Enter your search query:</label>
+      <input type="text" class="form-control" id="searchQuery" placeholder="Enter your search query...">
+    </div>
+    <button id="searchBtn" class="btn btn-primary" style="background-color: black;">Search🍳</button>
+    <div id="searchResult"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
