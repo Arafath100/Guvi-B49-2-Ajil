@@ -1,6 +1,6 @@
 
 # 💫 About Me:
-👋 Hello there! I'm Ajil Arafath.H, a passionate developer exploring the world of Full Stack Development (FSD).<br><br>🎓 Education: Completed Bachelor of Computer Applications (BCA) and now dedicatedly learning FSD.<br><br>🚀 Technical Interests: I'm diving deep into web technologies, from front-end design to back-end implementation.<br><br>💼 Projects: I'm excited about building full-stack applications that solve real-world problems.<br><br>🔧 Open Source: I believe in the power of collaboration and enjoy contributing to open-source projects.<br><br>📫 Let's Connect: Feel free to reach out via [ arafath2092@gmail.com, www.linkedin.com/in/Aᴊɪʟ-Aʀᴀғᴀᴛʜ-ʜ ].<br><br>Happy coding! 😄<br>
+👋 Hello there! I'm Ajil Arafath.H, a passionate developer exploring the world of Full Stack Development (FSD).<br><br><b>🎓 Education:</b> Completed Bachelor of Computer Applications (BCA) and now dedicatedly learning FSD.<br><br><b> 🚀 Technical Interests:</b>  I'm diving deep into web technologies, from front-end design to back-end implementation.<br><br><b> 💼 Projects:</b>  I'm excited about building full-stack applications that solve real-world problems.<br><br><b> 🔧 Open Source:</b>  I believe in the power of collaboration and enjoy contributing to open-source projects.<br><br></b> 📫 Let's Connect:</b>  Feel free to reach out via [ arafath2092@gmail.com, www.linkedin.com/in/Aᴊɪʟ-Aʀᴀғᴀᴛʜ-ʜ ].<br><br><b> Happy coding! 😄</b> <br>
 
 
 # 💻 Tech Stack:
